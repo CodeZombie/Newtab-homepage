@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<!--<script type="text/javascript" src="js/ajax.js"></script>-->
+	<script type="text/javascript" src="js/database.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<title>New Tab</title>
+</head>
+<body onload="start();">
+	<div id="header">
+		<div class="container">
+			<div class="sixteen columns">
+				Welcome back, Jim<a id="time">4:45pm</a>
+			</div>
+		</div>
+	</div>
+	<div id="content_container" class="container">
+		<input id="search" class="sixteen columns" placeholder="search" type="text" onkeypress="pressed_enter(event,search)"></input>
+		<div class="four columns">
+			<h3>Productivity</h3>
+			<a href="http://drive.google.com/">Google Drive</a>
+			<a href="http://live.ca/">Hotmail</a>
+			<a href="http://gmail.com/">Gmail</a>
+		</div>
+		<div class="four columns">
+			<h3>4chan</h3>
+			<a href="https://4chan.org/g/">/g/ - Technology</a>
+			<a href="https://4chan.org/v/">/v/ - The Vidya</a>
+			<a href="https://4chan.org/gd/">/gd/ - Graphic Design</a>
+			<a href="https://4chan.org/vg/agdg">/agdg/ - game dev</a>
+		</div>
+		<div class="four columns">
+			<h3>Media</h3>
+			<a href="https://youtube.com/">Youtube</a>
+			<a href="http://soundcloud.com/">Soundcloud</a>
+			<a href="http://grooveshark.com/">Grooveshark</a>
+			<a href="https://thepiratebay.se/">The Pirate Bay</a>
+			<a href="http://192.168.1.1/">Plex</a>
+		</div>
+		<div class="four columns">
+			<h3>Tools</h3>
+			<a href="http://pomf.se/">Pomf.se</a>
+			<a href="http://imgur.com/">Imgur</a>
+			<a href="http://clyp.it/">Clyp.it</a>
+			<a href="http://pastebin.com/">Pastebin</a>
+		</div>
+		<div class="sixteen columns">
+			<h3>To-Do</h3>
+			<input id="todo" placeholder="something to remember..." type="text" onkeypress="pressed_enter(event,todo_add)"></input>
+			<span id="todo_container">
+			</span>
+		</div>
+	</div>
+</body>
