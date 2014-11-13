@@ -2,7 +2,7 @@
 local storage database abstraction layer by Jeremy Clark (2014) (http://zombiearmy.net/)
 All files licensed under the MIT license. http://www.opensource.org/licenses/mit-license.php
 
-NOTE: Tables only support a single row.
+NOTE: Tables only support a single column.
 Tables will resemble the following:
 
    "Animals"
