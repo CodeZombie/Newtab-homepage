@@ -11,6 +11,10 @@ Tables will resemble the following:
   0000 | "dog"
   0001 | "cat"
   0002 | "pig"
+  
+  ToDo:
+  Add a metatable for greater functionality/safety (no more localStorage.clear() to remove tables)
+  Add support for multiple columns in each table.
 
 */
 
