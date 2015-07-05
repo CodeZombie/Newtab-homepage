@@ -44,7 +44,7 @@ function pressed_enter(e, func) {
 function search() {
 	var query_text = document.getElementById("search").value;
 	if (query_text != "") {
-		document.location.href = "https://duckduckgo.com/?q=" + query_text;
+		document.location.href = "https://www.google.ca/search?q=" + query_text;
 		return true;
 	}
 }
