@@ -1,10 +1,9 @@
 # Newtab Homepage
 Pretty and Minimal newtab page.
 
-![screenshot](https://i.imgur.com/tMzBgku.png)
+![screenshot](http://i.imgur.com/TlXhI49.png)
 
 #Features
- * Realtime clock
  * Search bar
  * Fully functional to-do box
  * Responsive layout
