@@ -5,5 +5,5 @@ Pretty and Minimal newtab page.
 
 #Features
  * Search bar
- * Fully functional to-do box
+ * Fully functional and persistant note widget
  * Responsive layout
