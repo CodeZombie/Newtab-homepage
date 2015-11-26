@@ -1,0 +1,64 @@
+body {
+	background:#eaedf2;
+	color:#323a45;
+	margin-top:12em;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+input, .note_text {
+	box-sizing:border-box;
+	width:100%;
+	padding: .75rem 1rem;
+	margin-bottom:1rem;
+	border: none;
+	font-size:.85rem;
+	background:#fff;
+}
+
+.clickable_list .header {
+	display:block;
+	box-sizing:border-box;
+	padding: .75rem 1rem;
+	font-weight:600;
+	color:#fff;
+	background:#323a45;
+}
+.clickable_list .column {
+	background:#fff;
+	margin-bottom:1rem;
+}
+.clickable_list a {
+	display:block;
+	box-sizing:border-box;
+	padding: .75rem 1rem;
+	color:#323a45;
+	text-decoration:none;
+
+}
+.clickable_list a:hover {
+	background:#14b9d5;
+	color:#fff;
+}
+
+.note_text{
+	float:left;
+	padding: .75rem 3rem .75rem 1rem;
+	margin-bottom:.25rem;
+	margin-right:-3rem;
+}
+.note_control_button {
+	display:block;
+	box-sizing:border-box;
+	float:left;
+	width:48px;
+	padding: .75rem 1rem;
+	font-size:.85rem;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wsaBQ8qPSCVQgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAoUlEQVQ4y92SsQrCMBCGvysZoltBcPQdHN2VIj6uSLB07dh36CgIbraD0C4ZwplAQEHwn3Jf/vsPjhMi2u72ApyBo0cX4NS19aS9BXHZoBn/tjFjKiBbvw8QvzALSMBXQK+8G+Ae1BMwGsABh4xhfYS5IrM5peorS7x+0O8MUAFGfZTATbE18FDsJYlTXgBPhZddWw9/eImpgBFogrrx7E0zqisbwRUFwsEAAAAASUVORK5CYII=') no-repeat center;
+	opacity:.25;
+}
+.note_control_button.x {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wsaBQ86IJeFJgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABMElEQVQ4y5XTQSvlURgG8N892d1Rd0p3I2kWMiUSVjYjZYrPYYHvY0rZyHeQWJCFFWaQMLpusrVQ3O5ONq86/v3/Zrx16pznPM9zznt6Tg0mpucS1vAdC3hSXr3YwiWWTg53X2oh3sZckB4whMeC+Cv+oi/WO5hP+JWJBeEM9Qyr4zQTw0+sJkyVXHUAFyGsx3yghDfZgxlcob+wOYjzbF6se8wmPEfPrRLStxjFamEYzymALkYrTMrEo6GRso0uxtD+QNwOTvcNSAVCzScrN2jgtqLn/E3awX1n0MA1mv9xaDO4jTeDLxGcZkXP7QqTP6j3YL8iJHfx2iJIgyU52Us4qgjJCDoxRgIr1nHCMjYz8CZC0smwTmA3GbaBlVr2ndcxjh//+M4H+I3Fk8Pdl1fN50KSdg7oxQAAAABJRU5ErkJggg==');
+}
+.note_control_button:hover, .note_control_button.x:hover {
+	opacity:1;
+	cursor:pointer;
+}

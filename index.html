@@ -1,63 +1,55 @@
-<!--
-Newtab Homepage written by Jeremy Clark (http://zombiearmy.net/) (2014). All files licensed under the MIT license.
-skeleton.css written by http://www.getskeleton.com/ and licensed under the MIT license.
-(MIT license) http://www.opensource.org/licenses/mit-license.php
--->
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="style/hella.css">
+	<link rel="stylesheet" href="style/style.css">
 	<script type="text/javascript" src="js/database.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<title>New Tab</title>
 </head>
 <body onload="start();">
-	<div id="header">
-		<div class="container">
-			<div class="sixteen columns">
-				Have a lovely day<a id="time">4:45pm</a>
+	<div class="grid">
+		<div class="row">
+			<div class="column">
+				<!-- search bar -->
+				<input id="search_input" class="input_generic" placeholder="search" type="text" onkeypress="pressed_enter(event,search)"></input>
 			</div>
 		</div>
-	</div>
-	<div id="content_container" class="container">
-		<input id="search" class="sixteen columns" placeholder="search" type="text" onkeypress="pressed_enter(event,search)"></input>
-		<div class="four columns">
-			<h3>Productivity</h3>
-			<a href="http://drive.google.com/">Google Drive</a>
-			<a href="http://live.ca/">Hotmail</a>
-			<a href="http://gmail.com/">Gmail</a>
-			<a href="http://imgur.com/">Imgur</a>
-			<a href="http://clyp.it/">Clyp.it</a>
+		<div class="row clickable_list">
+			<div class="column three">
+				<div class="header">productivity</div>
+				<a href="https://drive.google.com/">google drive</a>
+				<a href="http://live.ca/">hotmail</a>
+				<a href="https://github.com/">github</a>
+				<a href="http://gmail.com/">gmail</a>
+			</div>
+			<div class="column three">
+				<div class="header">procrastination</div>
+				<a href="https://4chan.org/v/">/v/ - videogames</a>
+				<a href="https://4chan.org/g/">/g/ - technology</a>
+				<a href="https://boards.4chan.org/vg/catalog#s=agdg">/agdg/ - gamedev</a>
+				<a href="https://www.reddit.com/r/deathgrips/">/r/deathgrips</a>
+			</div>
+			<div class="column three">
+				<div class="header">entertainment</div>
+				<a href="https://www.youtube.com/">youtube</a>
+				<a href="https://soundcloud.com/">soundcloud</a>
+				<a href="https://thepiratebay.vg/">thepiratebay</a>
+				<a href="http://somafm.com/">somafm</a>
+			</div>
+			<div class="column three">
+				<div class="header">shopping</div>
+				<a href="http://www.aliexpress.com/">aliexpress</a>
+				<a href="http://www.ebay.ca/">ebay</a>
+				<a href="http://www.dx.com/">dealextreme</a>
+				<a href="http://www.kijiji.ca/">kijiji</a>
+			</div>
 		</div>
-		<div class="four columns">
-			<h3>Time Wasters</h3>
-			<a href="https://4chan.org/g/">/g/ - Technology</a>
-			<a href="https://4chan.org/v/">/v/ - The Vidya</a>
-			<a href="https://4chan.org/gd/">/gd/ - Graphic Design</a>
-			<a href="https://4chan.org/vg/agdg">/agdg/ - Game Dev</a>
-			<a href="https://reddit.com/r/deathgrips/">/r/DeathGrips</a>
+		<div class="row">
+			<input id="note_input" class="input_generic note_text" type="text" placeholder="something to remember..." onkeypress="pressed_enter(event,note_add);"></input>
+			<div class="note_control_button" onclick="javascript:note_add();">&nbsp;</div>
 		</div>
-		<div class="four columns">
-			<h3>Media</h3>
-			<a href="https://youtube.com/">Youtube</a>
-			<a href="http://soundcloud.com/">Soundcloud</a>
-			<a href="https://thepiratebay.vg/">The Pirate Bay</a>
-			<a href="http://somafm.com/">Soma.fm</a>
-		</div>
-		<div class="four columns">
-			<h3>Shopping</h3>
-			<a href="http://aliexpress.com/">Aliexpress</a>
-			<a href="http://ebay.ca/">eBay</a>
-			<a href="http://dealextreme.com/">DealExtreme</a>
-			<a href="http://kijiji.ca/">Kijiji</a>
-			<a href="http://amazon.ca/">Amazon</a>
-		</div>
-		<div class="sixteen columns">
-			<h3>Sticky Pad</h3>
-			<input id="todo" placeholder="Something to remember..." type="text" onkeypress="pressed_enter(event,todo_add)"></input>
-			<span id="todo_container">
-			</span>
+		<div id="note_container">
 		</div>
 	</div>
 </body>

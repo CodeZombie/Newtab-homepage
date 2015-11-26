@@ -1,10 +1,8 @@
 /*
 local storage database abstraction layer by Jeremy Clark (2014) (http://zombiearmy.net/)
 All files licensed under the MIT license. http://www.opensource.org/licenses/mit-license.php
-
-NOTE: Tables only support a single column.
+NOTE: Tables only support a single column (integer index + value).
 Tables will resemble the following:
-
    "Animals"
  index | value
  -------------
@@ -15,7 +13,6 @@ Tables will resemble the following:
   ToDo:
   Add a metatable for greater functionality/safety (no more localStorage.clear() to remove tables)
   Add support for multiple columns in each table.
-
 */
 
 //(C) used to insert data into a table, or to initialize a table.
