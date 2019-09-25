@@ -1,0 +1,5 @@
+TODO:
+ Content should be truly centered, not just with a static padding between the search bar and top of page.
+
+ Users should be able to add links to the lists of items.
+ 
