@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 # Newtab Homepage
 Pretty and Minimal newtab page.
 
